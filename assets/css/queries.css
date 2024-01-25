@@ -137,7 +137,8 @@
     align-items: center;
     gap: 4rem; }
     .header .container .main-nav .main-nav-list .main-nav-link {
-      transition: var(--transition-1); }
+      transition: var(--transition-1);
+      color: var(--text-white); }
       .header .container .main-nav .main-nav-list .main-nav-link:is(:hover, :focus-within) {
         color: var(--text-white-alpha-60); }
     .header .container .main-nav .main-nav-list > li:not(:last-child) {
@@ -257,13 +258,6 @@
   .process .container .process-item .item-icon {
     width: 8rem; }
   .process .container .process-item .item-title {
-    margin-block: 2.5rem 1.5rem; }
-
-  /*-----------------------------------*\
-  #WORK
-\*-----------------------------------*/
-  /*-----------------------------------*\
-  #FOOTER
-\*-----------------------------------*/ }
+    margin-block: 2.5rem 1.5rem; } }
 
 /*# sourceMappingURL=queries.css.map */

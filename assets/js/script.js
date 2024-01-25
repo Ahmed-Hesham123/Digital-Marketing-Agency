@@ -50,3 +50,22 @@ window.addEventListener("mousemove", (event) => {
     );
   });
 });
+
+// Add Smoothing For Safari
+const allLinks = document.querySelectorAll("a:link"),
+  headerEl = document.querySelector(".header");
+allLinks.forEach((e) => {
+  e.addEventListener("click", (t) => {
+    t.preventDefault();
+    let l = e.getAttribute("href");
+    if (
+      ("#" === l && window.scrollTo({ top: 0, behavior: "smooth" }),
+      "#" !== l && l.startsWith("#"))
+    ) {
+      let o = document.querySelector(l);
+      o.scrollIntoView({ behavior: "smooth" });
+    }
+    e.classList.contains("main-nav-link") &&
+      headerEl.classList.toggle("active");
+  });
+});
