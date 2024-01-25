@@ -1,0 +1,269 @@
+/*-----------------------------------*\
+  #MEDIA QUERIES
+\*-----------------------------------*/
+/*
+    - responsive for large than 575px screen
+*/
+@media (min-width: 575px) {
+  /*-----------------------------------*\
+    #REUSED STYLE
+  \*-----------------------------------*/
+  .container {
+    max-width: 500px;
+    width: 100%;
+    margin-inline: auto; }
+
+  /*-----------------------------------*\
+  #HEADER
+\*-----------------------------------*/
+  .header .container {
+    max-width: unset; } }
+/*
+    - responsive for large than 768px screen
+*/
+@media (min-width: 768px) {
+  /*-----------------------------------*\
+  #CUSTOM PROPERTY
+\*-----------------------------------*/
+  :root {
+    /*
+        - TYPOGRAPHY
+    */
+    /*
+        -- FONT-SIZE
+    */
+    --fontSize-1: 5.5rem;
+    --fontSize-2: 4rem;
+    /*
+        - SPACING
+    */
+    --section-spacing: 150px; }
+
+  /*-----------------------------------*\
+      #REUSED STYLE
+  \*-----------------------------------*/
+  .container {
+    max-width: 720px; }
+
+  .section-text {
+    max-width: 500px;
+    margin-inline: auto; }
+
+  .grid-list {
+    grid-template-columns: 1fr 1fr; }
+
+  .btn-secondary {
+    color: var(--text-white);
+    height: 5.2rem;
+    border: 1px solid var(--border-blue-jeans);
+    padding-inline: 4rem; }
+    .btn-secondary:is(:hover, :focus-visible) {
+      background: var(--bg-blue-jeans); }
+
+  /*-----------------------------------*\
+  #HEADER
+\*-----------------------------------*/
+  .header .btn {
+    display: grid;
+    margin-inline: auto 3rem; }
+
+  /*-----------------------------------*\
+  #HERO
+\*-----------------------------------*/
+  .hero {
+    padding-block: 18rem; }
+    .hero .container .hero-content {
+      max-width: 560px; }
+      .hero .container .hero-content .input-wrapper {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem; }
+        .hero .container .hero-content .input-wrapper .btn {
+          margin-block-start: 0;
+          min-width: max-content; }
+    .hero .container .hero-banner {
+      position: relative;
+      max-width: 540px;
+      margin-inline: auto; }
+      .hero .container .hero-banner .shape {
+        display: block;
+        position: absolute;
+        filter: var(--shadow-2); }
+        .hero .container .hero-banner .shape.shape-1 {
+          width: 13%;
+          top: 350px;
+          left: 80px; }
+        .hero .container .hero-banner .shape.shape-2 {
+          width: 16%;
+          top: 440px;
+          left: -20px; }
+        .hero .container .hero-banner .shape.shape-3 {
+          width: 20%;
+          bottom: -20px;
+          left: 80px; }
+
+  /*-----------------------------------*\
+  #FOOTER
+\*-----------------------------------*/
+  .footer .footer-top .footer-links {
+    grid-template-columns: repeat(3, 1fr); } }
+/*
+    - responsive for large than 992px screen
+*/
+@media (min-width: 992px) {
+  /*-----------------------------------*\
+      #REUSED STYLE
+  \*-----------------------------------*/
+  .container {
+    max-width: 960px;
+    padding-inline: 4rem; }
+
+  body.nav-active {
+    overflow: auto; }
+
+  /*-----------------------------------*\
+    #HEADER
+  \*-----------------------------------*/
+  .header .container .btn-mobile-nav,
+  .header .container .overlay {
+    display: none; }
+  .header .container .logo img {
+    width: max-content; }
+  .header .container .main-nav, .header .container .main-nav.active {
+    all: unset;
+    margin-inline-start: 8rem; }
+  .header .container .main-nav .main-nav-list {
+    display: flex;
+    align-items: center;
+    gap: 4rem; }
+    .header .container .main-nav .main-nav-list .main-nav-link {
+      transition: var(--transition-1); }
+      .header .container .main-nav .main-nav-list .main-nav-link:is(:hover, :focus-within) {
+        color: var(--text-white-alpha-60); }
+    .header .container .main-nav .main-nav-list > li:not(:last-child) {
+      margin-block-end: 0; }
+  .header .btn {
+    margin-inline-end: 0; }
+
+  /*-----------------------------------*\
+    #HERO
+  \*-----------------------------------*/
+  .hero .container {
+    align-items: center;
+    grid-template-columns: 1fr 1fr; }
+
+  /*-----------------------------------*\
+    #PROCESS
+  \*-----------------------------------*/
+  .process .container .process-banner {
+    display: block;
+    max-width: 540px;
+    margin-inline: auto; }
+  .process .container .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 6rem; }
+    .process .container .wrapper .process-item {
+      text-align: left; }
+      .process .container .wrapper .process-item .item-icon {
+        margin-inline: 0; }
+    .process .container .wrapper .grid-list {
+      gap: 3rem 4rem; }
+
+  /*-----------------------------------*\
+    #WORK
+  \*-----------------------------------*/
+  .works .container .grid-list {
+    grid-template-columns: repeat(3, 1fr); }
+
+  /*-----------------------------------*\
+    #FOOTER
+  \*-----------------------------------*/
+  .footer .footer-top .container {
+    grid-template-columns: 0.5fr 1fr; }
+  .footer .footer-bottom .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .footer .footer-bottom .container .footer-bottom-links {
+      margin-block-start: 0;
+      gap: 5rem; } }
+/*
+    - responsive for large than 1200px screen
+*/
+@media (min-width: 1200px) {
+  /*-----------------------------------*\
+  #CUSTOM PROPERTY
+\*-----------------------------------*/
+  :root {
+    /*
+        - TYPOGRAPHY
+    */
+    /*
+        -- FONT-SIZE
+    */
+    --fontSize-1: 7rem;
+    --fontSize-3: 2.8rem; }
+
+  /*-----------------------------------*\
+        #REUSED STYLE
+    \*-----------------------------------*/
+  .container {
+    max-width: 1140px; }
+
+  .section-text {
+    max-width: 700px; } }
+/*
+    - responsive for large than 1400px screen
+*/
+@media (min-width: 1400px) {
+  /*-----------------------------------*\
+    #CUSTOM PROPERTY
+  \*-----------------------------------*/
+  :root {
+    /*
+          - TYPOGRAPHY
+      */
+    /*
+          -- FONT-SIZE
+      */
+    --fontSize-1: 8rem; }
+
+ /*-----------------------------------*\
+         #REUSED STYLE
+\*-----------------------------------*/
+  .container {
+    max-width: 1350px; }
+
+  .section-text {
+    margin-block-end: 6rem; }
+
+  /*-----------------------------------*\
+  #HERO
+\*-----------------------------------*/
+  .hero .container .hero-description {
+    font-size: 1.8rem;
+    margin-block: 4rem; }
+
+  /*-----------------------------------*\
+  #PROCESS
+\*-----------------------------------*/
+  .process .container .wrapper {
+    grid-template-columns: 0.7fr 1fr;
+    gap: 13rem; }
+    .process .container .wrapper .grid-list {
+      row-gap: 5rem; }
+  .process .container .process-item .item-icon {
+    width: 8rem; }
+  .process .container .process-item .item-title {
+    margin-block: 2.5rem 1.5rem; }
+
+  /*-----------------------------------*\
+  #WORK
+\*-----------------------------------*/
+  /*-----------------------------------*\
+  #FOOTER
+\*-----------------------------------*/ }
+
+/*# sourceMappingURL=queries.css.map */
